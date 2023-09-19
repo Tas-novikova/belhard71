@@ -1,5 +1,6 @@
 # TODO пользователь вводит предложение, заменить все пробелы на "-" 2-мя способами
 
+
 # text = 'Nice to meet you'
 text = input()
 split_text = text.split(' ')
