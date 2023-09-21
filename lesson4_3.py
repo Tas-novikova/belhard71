@@ -5,14 +5,15 @@
 # name = 'Ann'
 # email = 'ann@gmail.com'
 
+# n = int(input())
 # name = input('Your name')
 # email = input('Your email')
-
-n = int(input())
 
 # data = {n: {} for n in range(0, n)}
 # data_name_email = {'name': name, 'email': email}
 # new_data = {n: data_name_email for n in range(0, n)}
+
+n = int(input())
 
 new_data = {n: {'name': input('Your name'), 'email': input('Your email')} for n in range(0, n)}
 print(new_data)
