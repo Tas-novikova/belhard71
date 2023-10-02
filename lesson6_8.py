@@ -2,15 +2,19 @@
 #  поступает город, необходимо сказать из какой он страны
 
 
-def find_country(countries: dict[str, list[str]], city: str) -> str:
+def find_country(countries, city):
+    # result = [country for country, cities in countries.items() if city in cities]
+    # return result
     for country, cities in countries.items():
-        if city not in cities:
-            ValueError("this city is not on the list")
-        else:
+        if city in cities:
             return country
+        # else:
+        #     raise ValueError('this city is not on the list')
 
 
 list_countries = {'Belarus': ['Minsk', 'Gomel', 'Brest'], 'Russian': ['Moscow', 'Lytsk'],
-                    'Romania': ['Bucharest', 'Brasow']}
+                  'Romania': ['Bucharest', 'Brasow']}
 
-print(find_country(list_countries, 'Bucharest'))
+
+print(find_country(list_countries, 'Brasow'))
+
