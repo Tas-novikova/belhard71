@@ -9,7 +9,7 @@ def find_country(countries, city):
         if city in cities:
             return country
         # else:
-        #     raise ValueError('this city is not on the list')
+        #     return f"this city is not on the list"
 
 
 list_countries = {'Belarus': ['Minsk', 'Gomel', 'Brest'], 'Russian': ['Moscow', 'Lytsk'],
