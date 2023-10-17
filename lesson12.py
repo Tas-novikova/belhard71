@@ -39,7 +39,7 @@ cur.execute(
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         category_id INTEGER NOT NULL,
         title VARCHAR(36) NOT NULL CHECK(name !=''),
-        description VARCHAR(140) NULL,
+        description VARCHAR(140),
         FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE RESTRICT
     );
 """
